@@ -1,5 +1,7 @@
 package CrashCourse;
 
+import java.util.ArrayList;
+
 public class CrashCourse {
    
     public static void main(String[] args) {
@@ -103,7 +105,27 @@ public class CrashCourse {
     // 0 0 0
     // 0 0 0
     System.out.println("Rows: "+ arryGrid1.length);
-    System.out.println("Columns" + arry1Grid[0].length);
+    System.out.println("Columns: " + arryGrid1[0].length);
+
+    int[][] arryGrid2 = { {7, 8, 9}, {4, 5, 6}, {1, 2, 3} };
+
+    System.out.println(arryGrid2[0][1] + arryGrid2[2][2]);
+    System.out.println(arryGrid2[2][2]);
+
+    //Array List
+    //Can be any size lots of bultin functions to help
+    // Build primitive data types special classes for integer, double, boolean, string 
+    ArrayList<String> arrylst = new ArrayList<>();
+
+    arrylst.add("Word 1");
+    arrylst.add("Word 2");
+    arrylst.remove(0);
+    arrylst.add(0, "Word 3");
+    arrylst.set(2, "Word 4");
+    
+    System.out.println(arrylst);
+    System.out.print(arrylst.size());
+    System.out.println(arrylst.get(2));
     }
 
 }
