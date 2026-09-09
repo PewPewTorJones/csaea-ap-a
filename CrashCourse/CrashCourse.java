@@ -115,17 +115,71 @@ public class CrashCourse {
     //Array List
     //Can be any size lots of bultin functions to help
     // Build primitive data types special classes for integer, double, boolean, string 
-    ArrayList<String> arrylst = new ArrayList<>();
+   
+    //Math Class
 
-    arrylst.add("Word 1");
-    arrylst.add("Word 2");
-    arrylst.remove(0);
-    arrylst.add(0, "Word 3");
-    arrylst.set(2, "Word 4");
-    
-    System.out.println(arrylst);
-    System.out.print(arrylst.size());
-    System.out.println(arrylst.get(2));
+    Math.max(5, 10); //Max value
+    Math.min(7,3); //Min value 
+    Math.sqrt(81); // sqrt
+    Math.abs(-4); // Absolute value
+
+    // Conditionals
+
+    // if  else if    else 
+
+    boolean tru = true; boolean fal = false;
+
+    if(fal) {
+        System.out.println("Reached first codition");
+    } else if (fal){
+        System.out.println("Reached second condition");
+    } else {
+        System.out.println("Reached else");
     }
 
+    // Iteration
+    // While loop
+   int x = 5;
+
+   while(x < 10) {
+    System.out.println(x + " ");
+    x++;
+   }
+
+
+   System.out.println();
+   //for loop
+   // initialze vairable for an index; conditional; increment/decrement
+   for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+
+   }
+
+   //Enhancing for loop only for reading values
+   ArrayList<String> animals = new ArrayList<>();
+   animals.add("Dog");
+   animals.add("Cat");
+   animals.add("Bird");
+   System.out.println("ArrayList: " + animals);
+
+   for (String s : animals) {
+    System.out.println("We saw a " +s);
+    }
+
+   // Printing values of an array with iteration
+   double[] arry = {5.1, 6.2, 7.3, 8.4, 9.5};
+   System.out.println("Memory address of arry: " + arry);
+
+   for (int i = 0; i < arry.length; i++) {
+    System.out.println(arry[i]);
+   }
+   int[][] arryMatrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+   for (int row = 0; row < arryMatrix.length; row++) {
+    for (int col = 0; col < arryMatrix[row].length; col++) {
+        System.out.print(arryMatrix[row][col] + " ");
+    }
+    System.out.println();
+   }
+
+}
 }
