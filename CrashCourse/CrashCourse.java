@@ -170,6 +170,8 @@ public class CrashCourse {
    double[] arry = {5.1, 6.2, 7.3, 8.4, 9.5};
    System.out.println("Memory address of arry: " + arry);
 
+   double element = arry[2];
+
    for (int i = 0; i < arry.length; i++) {
     System.out.println(arry[i]);
    }
