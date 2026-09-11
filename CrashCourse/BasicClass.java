@@ -15,7 +15,7 @@ public class BasicClass {
         
         
         // Behaviors / Methods 
-        // yo can write as many as you want
+        // you can write as many as you want
 
 
 
