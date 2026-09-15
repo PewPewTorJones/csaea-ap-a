@@ -34,7 +34,7 @@ public class Knight {
     public void workOut() {
         strength += 1;
         if (strength > 100) {
-            strength = 100
+            strength = 100;
             System.out.println("You're too strong!!");
         }
     }
