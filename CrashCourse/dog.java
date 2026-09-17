@@ -18,13 +18,13 @@ public class dog {
 
     }
     public void bark() {
-        System.out.println("Woof")
+        System.out.println("Woof");
     }
     public void scratch() {
-        System.out.println("Racket Noises")
+        System.out.println("Racket Noises");
     }
     public void bite() {
-        System.out.println("Bite noise")
+        System.out.println("Bite noise");
     }
     public void eat() {
         isHungry = false;
@@ -37,7 +37,7 @@ public class dog {
         isHome = false;
         energyLevel -= 25;
         if(energyLevel <= 10){
-            System.out.println("Dog is tired")
+            System.out.println("Dog is tired");
         }
 
     }
@@ -59,4 +59,4 @@ public class dog {
 
 
 
-}
+
