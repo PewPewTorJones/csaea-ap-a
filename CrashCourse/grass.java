@@ -1,12 +1,10 @@
-
 public class grass {
-    String grasstype = "Bermuda";
+    String grasstype;
     private int grassHeightCm;
     private int growthRate;
     private int age;
     private boolean isCut;
     private double waterPercentage;
-    private String color = "green";
     private boolean isWatered;
     private boolean isFertilized;
 
@@ -14,7 +12,6 @@ public class grass {
         System.out.println("Grass is: green");
         System.out.println("Grass is: Bermuda");
     }
-    
 
     public grass(String grasstype, int grassHeightCm, int growthRate, int age) {
         this.grasstype = grasstype;
@@ -23,9 +20,45 @@ public class grass {
         this.age = age;
         this.isCut = true;
         this.waterPercentage = 0.0;
-        this.color = "green";
         this.isWatered = true;
         this.isFertilized = true;
+    }
+
+    public String getGrasstype() {
+        return grasstype;
+    }
+
+
+    public int getGrassHeightCm() {
+        return grassHeightCm;
+    }
+
+    public void setGrassHeightCm(int grassHeightCm) {
+        this.grassHeightCm = grassHeightCm;
+    }
+
+    public int getGrowthRate() {
+        return growthRate;
+    }
+
+    public void setGrowthRate(int growthRate) {
+        this.growthRate = growthRate;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getWaterPercentage() {
+        return waterPercentage;
+    }
+
+    public void setWaterPercentage(double waterPercentage) {
+        this.waterPercentage = waterPercentage;
     }
 
     public void cutGrass() {
