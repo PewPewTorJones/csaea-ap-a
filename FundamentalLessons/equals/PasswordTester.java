@@ -37,7 +37,7 @@ public class PasswordTester {
         String attempt = new String("lion");
         System.out.println(p.checkBroken(attempt));
         System.out.println(p.check(attempt));
-        
+        System.out.println(p.isSafe("ana"));
 
     }
 

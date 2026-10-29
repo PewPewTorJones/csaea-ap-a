@@ -52,4 +52,20 @@ public class Password
             return false;
         }
     }
+     // ===== CHALLENGE 3 =====
+    // Return true if the secret is safe to use:
+    //     it is NOT the word "password", AND
+    //     it does NOT contain the username anywhere inside it.
+    //     secret "lion",     isSafe("ana") -> true
+    //     secret "password", isSafe("ana") -> false   (too common)
+    //     secret "12ana3",   isSafe("ana") -> false   (contains the username)
+    // Tools: equals, indexOf, -1, if/else
+    public boolean isSafe(String username) {
+        if (secret.equals("password") || secret.indexOf(username) != -1) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 }
