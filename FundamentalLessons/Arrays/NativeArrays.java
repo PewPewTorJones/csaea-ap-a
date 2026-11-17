@@ -12,9 +12,9 @@ public class NativeArrays {
 
         public static void main(String[] args) {
 
-            int[] scores = new int[5];
+            int[] scores1 = new int[5];
 
-            System.out.println("Default values: " + Arrays.toString(scores));
+            System.out.println("Default values: " + Arrays.toString(scores1));
 
             int[] nums = {3, 7, 1, 9, 4};
 
@@ -85,7 +85,30 @@ public class NativeArrays {
             }
             System.out.println(temps[i]);
         }
-
-
+        // Challenge: Curve the Scores
+        // int[] scores = {85, 62, 97, 45, 70, 99};
+        // Add 5 to every score, but no score can go above 100. 
+        int [] scores = {85, 62, 97, 45, 70, 99};
+        for (int i = 0; i < scores.length; i++) {
+            scores[i] += 5;
+            if (scores[i] > 100) {
+                scores[i] = 100;
+            }
+            System.out.println(scores[i]);
         }
+        // Challenge: Find the Highest
+        // int[] temps = {58, 71, 64, 80, 77, 69};
+        // Use a loop to find the highest temperature and the index it's at, then print both. Use Math.max()!
+        int[] temps2 = {58, 71, 64, 80, 77, 69};
+        int highestTemp = temps2[0];
+        int highestIndex = 0;
+        for (int i = 0; i < temps2.length; i++) {
+            if (temps2[i] > highestTemp) {
+                highestIndex = i;
+            }
+            highestTemp = Math.max(highestTemp, temps2[i]);
+        }
+        System.out.println("Highest temperature: " + highestTemp);
+        System.out.println("Index: " + highestIndex);
+    }
 }
