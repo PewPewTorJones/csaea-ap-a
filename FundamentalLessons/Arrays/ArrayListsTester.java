@@ -13,5 +13,10 @@ public class ArrayListsTester {
         ArrayLists.ShowIndex(animals);
         int index = ArrayLists.findIndex(animals, "blobfish");
         System.out.println("Index of blobfish: " + index);
+
+        ArrayLists.modifyAnimals(animals);
+        ArrayLists.replaceAll(animals, "pangolin", "platypus");
+        System.out.println("After replacement: " + animals);
+        ArrayLists.numberUtilities();
     }
 }
